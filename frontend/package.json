@@ -1,0 +1,8 @@
+{
+  "name": "app.tresorbase.com",
+  "private": true,
+  "devDependencies": {
+    "@escape.tech/mookme": "^2.1.1",
+    "typescript": "^4.7.3"
+  }
+}

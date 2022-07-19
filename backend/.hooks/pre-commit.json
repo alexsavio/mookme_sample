@@ -1,0 +1,12 @@
+{
+  "steps": [
+    {
+      "name": "no-breakpoint",
+      "command": "grep --include=*.py -rnw 'src' -e 'breakpoint()' 2>/dev/null; test $? -gt 0"
+    },
+    {
+      "name": "lint",
+      "command": "make lint"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "steps": [
+    {
+      "name": "no-push-to-main-branch",
+      "command": "[[ \"$(git symbolic-ref HEAD | cut -d\/ -f3-)\" == \"main\" ]] && exit 1 || exit 0"
+    },
+    {
+      "name": "check-ast",
+      "command": "check-ast",
+      "onlyOn": "*.py"
+    },
+    {
+      "name": "check-symlinks",
+      "command": "check-symlinks"
+    },
+    {
+      "name": "check-merge-conflict",
+      "command":  "check-merge-conflict"
+    },
+    {
+      "name": "check-json",
+      "command": "check-json",
+      "onlyOn": "*.json"
+    },
+    {
+      "name": "check-toml",
+      "command": "check-toml",
+      "onlyOn": "*.toml"
+    },
+    {
+      "name": "check-yaml",
+      "command": "check-yaml --unsafe",
+      "onlyOn": "*.{yml,yaml}"
+    },
+    {
+      "name": "detect-private-key",
+      "command": "detect-private-key"
+    },
+    {
+      "name": "trailing-whitespace-fixer",
+      "command": "trailing-whitespace-fixer"
+    }
+  ]
+}

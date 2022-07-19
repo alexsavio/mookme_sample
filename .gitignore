@@ -1,0 +1,5 @@
+.vscode
+node_modules
+.hooks/pre-commit.local.json
+.python-version
+.node-version
