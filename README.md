@@ -15,5 +15,5 @@ npm i
 # Setup mookme
 
 ```bash
-npx mookme init
+npx mookme init --only-hook
 ```
