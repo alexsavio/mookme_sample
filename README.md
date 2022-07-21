@@ -1,4 +1,4 @@
-# Install backend dependencies
+# Install backend dependencies...
 
 ```bash
 cd backend
@@ -15,5 +15,6 @@ npm i
 # Setup mookme
 
 ```bash
-npx mookme init
+npm install --global @escape.tech/mookme
+npx mookme init --only-hook --added-behaviour pre-commit --skip-types-selection
 ```

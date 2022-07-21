@@ -17,18 +17,6 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = ">=3.10,<4"
-isort = "*"
-flake8 = { version = ">=4.0.1" }
-flake8-bugbear = "*"
-flake8-commas = "*"
-flake8-docstrings = "*"
-flake8-per-file-ignores = "*"
-mccabe = "*"
-pep8-naming = "*"
-autopep8 = "*"
-mypy = "*"
-pydocstyle = "*"
-black = "*"
 
 [tool.poetry.dev-dependencies]
 pre-commit-hooks = "^4.3.0"
